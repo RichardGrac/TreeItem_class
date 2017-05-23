@@ -3,7 +3,6 @@ import javafx.scene.control.TreeItem;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Richard on 22/05/2017.
@@ -16,15 +15,8 @@ public class Arbol {
 
     public Arbol() {
         lee_fichero();
-//        print_Tree();
         save_tree();
         System.out.println("Fin");
-    }
-
-    private void print_Tree(){
-        for (int i = 0; i < line.size(); i++){
-            System.out.println(line.get(i));
-        }
     }
 
     private void save_tree(){
